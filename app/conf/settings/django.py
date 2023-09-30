@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "3da94d3dca929124d4ffb44cd7f244f46faa3eeaa933fe17187116c45019aa45"
+SECRET_KEY = "dev"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,7 +75,7 @@ WSGI_APPLICATION = "core.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.contrib.gis.db.backends.postgis",
-        "NAME": os.getenv("POSTGRES_DB", default="kwiiwnno"),
+        "NAME": os.getenv("POSTGRES_DB", default="edusearch"),
         "HOST": os.getenv("POSTGRES_HOST", default="127.0.0.1"),
         "PORT": os.getenv("POSTGRES_PORT", default="5432"),
         "USER": os.getenv("POSTGRES_USER", default="education"),
