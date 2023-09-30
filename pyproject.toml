@@ -15,6 +15,7 @@ poethepoet = "^0.23.0"
 psycopg2-binary = "^2.9.8"
 django-structlog = "^5.3.0"
 django-enumfields2 = "^3.0.2"
+djangorestframework = "^3.14.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -24,6 +25,10 @@ pre-commit = "^3.4.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "F403"]
 
 [tool.poe.tasks]
 run = "python app/manage.py runserver"
