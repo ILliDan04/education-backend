@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "education-backend"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "education_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.5"
+django-cors-headers = "^4.2.0"
+python-dotenv = "^1.0.0"
+poethepoet = "^0.23.0"
+psycopg2-binary = "^2.9.8"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+run = "python app/manage.py runserver"
+shell = "python app/manage.py shell_plus"
+collectstatic = "python app/manage.py collectstatic"
+showmigrations = "python app/manage.py showmigrations"
+makemigrations = "python app/manage.py makemigrations"
+migrate = "python app/manage.py migrate"
+generate_admin = "python app/manage.py admin_generator"
