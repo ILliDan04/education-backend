@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     "django.contrib.gis",
     "corsheaders",
     "apps.users",
+    "apps.professions",
+    "apps.education",
 ]
 
 MIDDLEWARE = [
