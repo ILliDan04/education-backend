@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.gis",
     "corsheaders",
+    "rest_framework",
     "apps.users",
     "apps.professions",
     "apps.education",
