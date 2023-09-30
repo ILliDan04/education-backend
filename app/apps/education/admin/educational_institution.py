@@ -1,11 +1,11 @@
-from apps.education.models import EducationalInstitution
 from django.contrib import admin
+
+from apps.education.models.educational_institution import EducationalInstitution
 
 
 @admin.register(EducationalInstitution)
 class EducationalInstitutionAdmin(admin.ModelAdmin):
     list_display = (
         "name",
-        "required_educational_level",
-        "education_level_on_graduation",
+        "institution_type",
     )
