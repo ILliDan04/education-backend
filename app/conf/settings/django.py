@@ -150,7 +150,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# AUTH_USER_MODEL = "users.User"
+AUTH_USER_MODEL = "users.User"
 
 BACKEND_HOST = os.getenv("BACKEND_HOST")
 FRONTEND_HOST = os.getenv("FRONTEND_HOST")
